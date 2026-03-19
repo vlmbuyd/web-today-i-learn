@@ -5,8 +5,8 @@
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
     <!-- TODO: Open Graph 메타 태그를 설정하세요 -->
-    <!-- <meta property="og:title" content="페이지 제목" /> -->
-    <!-- <meta property="og:description" content="페이지 설명" /> -->
+    <meta property="og:title" content="유월 자기소개 페이지" />
+    <meta property="og:description" content="유월 자기소개 페이지" />
     <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
 
     <title>Today I Learn</title>
@@ -33,8 +33,8 @@
           <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
         </div>
         <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
+          <h1>유월</h1>
+          <p class="tagline">반갑습니다</p>
         </div>
       </div>
     </section>
@@ -43,8 +43,11 @@
       <!-- 자기소개 -->
       <section class="content-section">
         <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
-        <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
+        <p>
+          프론트엔드 개발자 유월입니다. <br />
+          <a href="https://github.com/vlmbuyd">Github</a>
+          <a href="https://velog.io/@vlmbuyd/posts">Blog</a>
+        </p>
       </section>
 
       <!-- 기본 정보 -->
@@ -54,19 +57,19 @@
         <table class="info-table">
           <tr>
             <th>이름</th>
-            <td></td>
+            <td>김예안</td>
           </tr>
           <tr>
             <th>MBTI</th>
-            <td></td>
+            <td>ISFP</td>
           </tr>
           <tr>
             <th>취미</th>
-            <td></td>
+            <td>OTT 시청</td>
           </tr>
           <tr>
             <th>좋아하는 음식</th>
-            <td></td>
+            <td>면 종류</td>
           </tr>
         </table>
       </section>
@@ -74,14 +77,21 @@
       <!-- 나만의 갤러리 -->
       <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
+        <p class="section-desc">
+          갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)
+        </p>
         <div class="gallery-grid">
           <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
+
+          <img src="./images/gallery-1.jpeg" alt="갤러리 이미지 1" />
+          <img src="./images/gallery-2.jpeg" alt="갤러리 이미지 2" />
+          <img src="./images/gallery-3.jpeg" alt="갤러리 이미지 3" />
+          <img src="./images/gallery-4.jpeg" alt="갤러리 이미지 4" />
+          <img src="./images/gallery-5.jpeg" alt="갤러리 이미지 5" />
+          <img src="./images/gallery-6.jpeg" alt="갤러리 이미지 6" />
+          <img src="./images/gallery-7.jpeg" alt="갤러리 이미지 7" />
+          <img src="./images/gallery-8.jpeg" alt="갤러리 이미지 8" />
+          <img src="./images/gallery-9.jpeg" alt="갤러리 이미지 9" />
         </div>
       </section>
 
@@ -93,11 +103,38 @@
           <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
           <article class="work-card">
             <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ZkXc9btRnJU?si=2_BABkC7DTBLqOL-"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
+              <h3>비행운 커버 영상</h3>
+              <p>최근 자주 듣고 있는 비행운 커버 영상</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-thumbnail">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/BtjdDDfCjvo?si=5qScB5aA_gOZ_n4b"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="work-info">
+              <h3>한일가왕전-Pretender</h3>
+              <p>최근 자주 듣고 있는 노래</p>
             </div>
           </article>
         </div>
@@ -116,11 +153,22 @@
           </div>
           <div class="form-group">
             <label for="til-title">제목</label>
-            <input type="text" id="til-title" name="title" placeholder="학습 주제를 입력하세요" required />
+            <input
+              type="text"
+              id="til-title"
+              name="title"
+              placeholder="학습 주제를 입력하세요"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="til-content">내용</label>
-            <textarea id="til-content" name="content" placeholder="오늘 배운 내용을 정리해주세요" required></textarea>
+            <textarea
+              id="til-content"
+              name="content"
+              placeholder="오늘 배운 내용을 정리해주세요"
+              required
+            ></textarea>
           </div>
           <div class="form-actions">
             <button type="submit">등록</button>
@@ -134,11 +182,13 @@
           <article class="til-item">
             <time>2026-03-15</time>
             <h3>HTML 시멘틱 태그</h3>
-            <p>header, nav, main, section, article, footer 등 시멘틱 태그의 역할과 사용법을 배웠다.</p>
+            <p>
+              header, nav, main, section, article, footer 등 시멘틱 태그의
+              역할과 사용법을 배웠다.
+            </p>
           </article>
         </div>
       </section>
-
     </main>
 
     <footer>
